@@ -20,6 +20,7 @@
 .aos-init[data-aos][data-aos].aos-animate {
 	transform: unset;
 }
+
 :root{
 /* Color */
 	--primary-color: hsl(35, 94%,66%);
@@ -939,4 +940,13 @@ footer{
 .navigate__btn a i.rotate{
 	rotate: 180deg;
 }
-
+::-webkit-scrollbar{
+	width: 12px;
+}
+::-webkit-scrollbar-thumb{
+	background-color: var(--primary-color);
+	border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+	background-color: var(--primary-color-lighter);
+}
