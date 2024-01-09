@@ -1,15 +1,15 @@
 /*==================> Fonts <=========================*/
 @font-face{
 	font-family:"myfont" ;
-	src:url('../Fonts/WorkSans-Regular.ttf');
+	src:url('../Fonts/WorkSans-Regular.woff2');
 }
 @font-face{
 	font-family:"myfont_bold" ;
-	src:url('../Fonts/WorkSans-SemiBold.ttf');
+	src:url('../Fonts/WorkSans-SemiBold.woff2');
 }
 @font-face{
 	font-family:"myfont_bolder" ;
-	src:url('../Fonts/WorkSans-Bold.ttf');
+	src:url('../Fonts/WorkSans-Bold.woff2');
 }
 [data-aos] {
 	pointer-events: none;
