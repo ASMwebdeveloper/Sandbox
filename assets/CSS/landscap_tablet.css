@@ -1,0 +1,141 @@
+/* mobile view */
+@media (840px <= width < 1250px){
+	:root{
+		--spacing :2rem;
+		--spacing-block : 2rem;
+		--spacing-inline : 4rem;
+		--gap:10px;
+
+		--fs-s:.9rem;
+		--fs-pg:calc(var(--fs-s) + .2rem);
+	}
+    /* =================>: Header	*/
+	.site__title{
+		font-size: calc(var(--fs-m));
+    }
+    .navbar{
+		gap: calc(var(--gap) * 3);
+    }
+    .nav__ul{
+		gap: calc(var(--gap) + .2rem);
+    }
+    .nav__ul--2{
+		display: none;
+    }
+    .nav__ul li a{
+		font-size:var(--fs-s);
+    }
+    .nav__ul li>a>i{
+		font-size: calc(var(--fs-s) - .2rem);
+		padding: 0;
+    }
+    .dropdown__menu .dropdown__item{
+		font-size: calc(var(--fs-s) - .1rem);
+    }
+    .nav__ul:first-of-type > li:last-child .dropdown__menu{
+		right: 0;
+	}
+	/*==============>:- Services container */
+	.services__container__title{
+		font-size: calc(var(--fs-m) + .2rem);
+		inline-size: 80%;		
+	}
+	.card__section{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.card__section .card{
+		flex-basis: 30%;
+	}
+/*==========> Analyze container <============*/
+	.hero--analyze .hero__text{
+		flex: 1;
+	}
+/*============> Strategy container <===============*/
+	
+	.strategy__container{
+		padding-top: calc(var(--spacing-block) * 3);
+	}
+	.hero--strategy{
+		align-items: center;
+		gap: var(--gap);
+		flex-wrap: wrap;
+	}
+	.hbl__content{
+		flex-wrap: wrap;
+	}
+	.hbl__content p{
+		inline-size: 100%;
+	}
+/*=============> Team container <===============*/
+	.team__container :is(.card__header,.card__title,.card__content) {
+		text-align: center;
+	}
+	.team__container .card__footer{
+		justify-content: center;
+	}
+/*=============> Solution container <================*/
+	.hero--solution > *{
+		flex-basis: 40%;
+	}
+	.hero--solution > *:last-child{
+		align-self: start;
+		flex-basis: 60%;
+	}
+/*=============> Testimonials container <================*/
+	.hero--testimonials{
+		gap: var(--spacing-inline);
+	}
+	.hero--testimonials > *:first-child{
+		flex-basis: 60%;
+	}
+	.hero--testimonials > *:last-child{
+		flex: 1;
+	}
+/*==================> Wrapper <========== */
+	.wrapper::after{
+		top: 7%;
+		bottom: -5%;
+		clip-path: polygon(0 2%, 100% 0, 100% 98%, 0 100%);
+	}
+/*==================> Pricing container <========== */
+	.pricing__container{
+		padding-block: calc(var(--spacing-block) * 2);
+	}
+	.pricing__container .hero__text__title{
+		font-size: calc(var(--fs-m) + .5rem);
+	}
+	.pricing__container .hero__text{
+		flex-basis: 40%;
+	}
+	.pricing__container .hero__banner{
+		flex-grow: 1;
+	}
+	.pricing__container .card--pricing{
+		flex-grow: 1;
+	}
+	.card--pricing:last-child::after{
+		content: ' . . . . . . . . . . . . . . . . . ';
+		inline-size: 7rem;
+		right: -1.1rem;
+	}
+
+/*==================> Contact container <========== */
+	.hero--contact{
+		gap: var(--spacing);
+	}
+	.hero--contact > *{
+		flex-basis: 45%;
+	}
+	.hero--contact .hero__text__title{
+		font-size: calc(var(--fs-m) + .3rem);
+	}
+/*==================> Footer container <========== */	
+	.footer__header .footer__title{
+		inline-size: 100%;
+	}
+	.footer__header .btn{
+		width:10em ;
+		padding-inline: 1em;
+	}
+}
